@@ -35,7 +35,7 @@ const data = reactive([])
 
 import DataTable from 'datatables.net-vue3';
 import DataTablesCore from 'datatables.net-dt';
- 
+
 DataTable.use(DataTablesCore);
 
 function addRow() {
@@ -51,8 +51,9 @@ function addRow() {
 }
 
 function addColumn() {
-	let column = { title: "Column" }
+	let column = { title: "Column1" }
 	columns.push(column)
+	DataTable.use(DataTablesCore);
 }
 
 </script>
