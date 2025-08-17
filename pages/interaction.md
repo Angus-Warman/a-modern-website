@@ -2,7 +2,7 @@
 
 The count is: {{ count }}
 
-<button @click="count++">count++</button>
+<button class="primary" @click="count++">count++</button>
 
 <script setup>
 

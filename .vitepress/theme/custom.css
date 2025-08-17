@@ -1,3 +1,20 @@
 :root {
   /* https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css */
 }
+
+.primary {
+	background-color: var(--vp-c-brand-3);
+	color: white;
+	padding: 4px 8px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+}
+
+.primary:hover {
+	background-color: var(--vp-c-brand-2);
+}
+
+.primary:active {
+	background-color: var(--vp-c-brand-1);
+}
