@@ -11,7 +11,8 @@ export default defineConfig({
 	logo: '/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Interaction', link: '/interaction' }
     ],
 
     sidebar: [
