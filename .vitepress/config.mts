@@ -5,6 +5,7 @@ export default defineConfig({
   title: "A modern website",
   description: "A modern website",
   srcDir: 'pages',
+  base: '/a-modern-website/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 	logo: '/logo.svg',
