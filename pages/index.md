@@ -6,7 +6,7 @@ hero:
   name: "A modern website"
   tagline: Haven't you noticed they all look like this?
   image:
-    src: /logo.svg
+    src: ./logo.svg
     alt: A logo
   actions:
     - theme: brand
