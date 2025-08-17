@@ -20,31 +20,39 @@ The count is: {{ count }}
 <br>
 <textarea></textarea>
 
-<DataTable class="display" :columns="columns" :data="data">
-</DataTable>
+<button class="primary" @click="addRow()">Add row</button>
+<button class="primary" @click="addColumn()">Add column</button>
+
+<DataTable class="display" :columns="columns" :data="data"></DataTable>
 
 <script setup>
-	
-import { ref } from 'vue'
+
+import { ref, reactive } from 'vue'
 
 const count = ref(0)
+const columns = reactive([{ title: 'Column' }])
+const data = reactive([])
 
 import DataTable from 'datatables.net-vue3';
 import DataTablesCore from 'datatables.net-dt';
  
 DataTable.use(DataTablesCore);
 
-const columns = [
-  { title: 'Name' },
-  { title: 'Position' },
-  { title: 'Office' },
-  { title: 'Extension' },
-  { title: 'Start date' },
-  { title: 'Salary' },
-];
+function addRow() {
+	let row = []
 
-const data = [
-	["Joe Guy", "Head Boss", "The", 1, "1/2/3", "Money"]
-]
+	let numColumns = columns.length
+
+	for (var i = 0; i < numColumns; i++) {
+		row.push(i)
+	}
+
+	data.push(row)
+}
+
+function addColumn() {
+	let column = { title: "Column" }
+	columns.push(column)
+}
 
 </script>
