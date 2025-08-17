@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/a-modern-website/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-	logo: './logo.svg',
+	logo: '/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
